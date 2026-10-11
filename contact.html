@@ -5,102 +5,210 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact | Jonash Valencia</title>
+    <meta name="description" content="Get in touch with Jonash B. Valencia, full-stack developer, by email or through GitHub, LinkedIn and social media.">
+    <meta name="theme-color" content="#052011">
+    <script src="Theme.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <link rel="icon" href="VALENCIA_logo.svg?v=2" type="image/svg+xml" sizes="any">
-    <link rel="shortcut icon" href="VALENCIA_logo.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="assets/images/logo-transparent.png" type="image/png">
+<link rel="shortcut icon" href="assets/images/logo-transparent.png" type="image/png">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="site-nav navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="VALENCIA_logo.png" alt="Valencia" width="50" class="me-3">
-                <span class="fw-extrabold ls-tight">J. VALENCIA</span>
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" title="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#activities">Portfolio</a></li>
-                      <li class="nav-item ms-lg-4">
-                        <a href="index.html" class="btn-premium px-4 py-2 small">Go Back</a>
-                    </li>
-                </ul>
+            <div class="nav-shell">
+                <a class="navbar-brand nav-brand d-flex align-items-center" href="index.html">
+<img src="assets/images/logo-transparent.png" alt="Valencia logo" class="nav-brand-logo me-2">
+                    <span class="fw-extrabold ls-tight">J. VALENCIA</span>
+                </a>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+                        <i class="ph-bold ph-sun icon-to-light" aria-hidden="true"></i>
+                        <i class="ph-bold ph-moon icon-to-dark" aria-hidden="true"></i>
+                    </button>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" title="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-links ms-lg-auto me-lg-3">
+                        <li class="nav-item"><a class="nav-link" href="index.html#top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#activities">Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+                    <a href="index.html" class="nav-cta"><i class="ph ph-arrow-left" aria-hidden="true"></i> Back Home</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <main class="container">
-        <section class="row align-items-center min-vh-100 py-5">
-            <div class="col-lg-8 col-xl-7 text-center text-lg-start">
-                <span class="section-tag">Contact</span>
-                <h1 class="hero-title mb-4">Let’s connect and build <span class="text-gradient">something valuable</span>.</h1>
-                <p class="lead text-dim leading-relaxed mb-5">Use the email below to write directly or follow my socials to stay updated with my latest projects and collaborations.</p>
 
-                <div class="row g-4">
-                    <div class="col-12 col-md-6">
-                        <div class="glass-card p-4 h-100">
-                            <span class="project-tag mb-3">Contact</span>
-                            <h3 class="h5 text-white mb-3">Send a message</h3>
-                            <p class="text-dim mb-4">Email or call me using the details below, and I’ll reply quickly.</p>
-                            <a href="mailto:valencianash1018@gmail.com" class="btn-premium py-2 px-4 small">Email Me</a>
-                            <p class="text-dim small mt-3 mb-1">Email: valencianash1018@gmail.com</p>
-                            <p class="text-dim small mb-1">Mobile: 0994 965 9250</p>
-                            <p class="text-dim small">Mobile: 0946 022 6788</p>
+        <!-- Header -->
+        <section class="text-center pt-5 pb-4 contact-header">
+            <span class="status-badge mb-4">
+                <span class="status-dot" aria-hidden="true"></span> Open to Opportunities
+            </span>
+            <h1 class="about-title mb-3">Let's build something <span class="text-gradient">valuable</span> together.</h1>
+            <p class="lead text-dim leading-relaxed mx-auto content-max-width mb-0">
+                Whether it's a role, a project or just a question, send me a message and I'll get back to you as soon as I can.
+            </p>
+        </section>
+
+        <!-- Contact options -->
+        <section class="py-5">
+            <div class="row g-4">
+
+                <!-- Left: email + socials -->
+                <div class="col-lg-5">
+                    <div class="glass-card p-4 mb-4">
+                        <span class="project-tag d-inline-block mb-3">Email</span>
+                        <p class="text-dim small mb-2">The fastest way to reach me</p>
+                        <a href="mailto:valencianash1018@gmail.com" class="email-link d-block mb-3">valencianash1018@gmail.com</a>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="mailto:valencianash1018@gmail.com" class="btn-premium py-2 px-4 small">Email Me <i class="ph ph-envelope-simple" aria-hidden="true"></i></a>
+                            <button type="button" class="btn-ghost py-2 px-4 small" id="copyEmail">
+                                <i class="ph ph-copy" aria-hidden="true"></i> <span id="copyLabel">Copy email</span>
+                            </button>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="glass-card p-4 h-100">
-                            <span class="project-tag mb-3">Socials</span>
-                            <h3 class="h5 text-white mb-4">Follow me online</h3>
-                            <div class="d-flex flex-column gap-3">
-                                <a href="https://github.com/jonash18" class="skill-pill" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
-                                    <i class="ph ph-github-logo text-primary"></i>
-                                    <span>github.com</span>
-                                </a>
-                                <a href="https://www.facebook.com/jonash.valencia" class="skill-pill" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
-                                    <i class="ph ph-facebook-logo text-primary"></i>
-                                    <span>facebook.com</span>
-                                </a>
-                                <a href="#" class="skill-pill" aria-label="Discord" title="Discord">
-                                    <i class="ph ph-discord-logo text-primary"></i>
-                                    <span>Discord: jonash#1018</span>
-                                </a>
-                                <a href="https://www.instagram.com/natnatvalen/" class="skill-pill" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
-                                    <i class="ph ph-instagram-logo text-primary"></i>
-                                    <span>instagram.com</span>
-                                </a>
-                            </div>
+
+                    <div class="glass-card p-4">
+                        <span class="project-tag d-inline-block mb-3">Find me online</span>
+                        <div class="d-flex flex-column gap-3">
+                            <a href="https://github.com/jonash18" class="contact-social-link" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                                <i class="ph ph-github-logo text-primary"></i>
+                                <span>github.com/jonash18</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jonash-valencia-696369440/" class="contact-social-link" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                                <i class="ph ph-linkedin-logo text-primary"></i>
+                                <span>linkedin.com/in/jonash-valencia-696369440</span>
+                            </a>
+                            <a href="https://www.facebook.com/jonash.valencia" class="contact-social-link" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+                                <i class="ph ph-facebook-logo text-primary"></i>
+                                <span>facebook.com/jonash.valencia</span>
+                            </a>
+                            <a href="https://www.instagram.com/natnatvalen/" class="contact-social-link" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+                                <i class="ph ph-instagram-logo text-primary"></i>
+                                <span>instagram.com/natnatvalen</span>
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Right: message form -->
+                <div class="col-lg-7">
+                    <div class="glass-card p-4 p-lg-5 h-100">
+                        <span class="project-tag d-inline-block mb-3">Message</span>
+                        <h2 class="h3 fw-bold text-white mb-2 ls-tight">Send me a message</h2>
+                        <p class="text-dim mb-4">Fill in the form and your email app will open with the message ready to send.</p>
+
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="cName" class="form-label">Your name</label>
+                                    <input type="text" class="form-control" id="cName" name="name" placeholder="Juan Dela Cruz" autocomplete="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cEmail" class="form-label">Your email</label>
+                                    <input type="email" class="form-control" id="cEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="cTopic" class="form-label">What is this about?</label>
+                                    <select class="form-select" id="cTopic" name="topic">
+                                        <option>Job or internship opportunity</option>
+                                        <option>Project or collaboration</option>
+                                        <option>Question about my work</option>
+                                        <option>Something else</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="cMessage" class="form-label">Message</label>
+                                    <textarea class="form-control" id="cMessage" name="message" rows="6" placeholder="Tell me a bit about what you have in mind..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <p class="form-error small mb-3" id="formError" role="alert" hidden>Please fill in your name, a valid email and a message.</p>
+                                    <button type="submit" class="btn-premium">Send Message <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
-    <footer class="py-5 mt-5 border-top border-secondary border-opacity-10">
+    <footer class="site-footer">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="text-dim small mb-0">&copy; 2026 <span class="text-white fw-bold">Jonash B. Valencia</span>. Building the future.</p>
+            <div class="footer-main">
+                <div class="footer-copy">
+                    <span class="footer-eyebrow">LET'S BUILD SOMETHING USEFUL</span>
+                    <h2>Turning ideas into thoughtful digital experiences.</h2>
+                    <p class="text-dim mb-0">Full-stack development, clean interfaces, and systems designed to do meaningful work.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
-                    <div class="d-flex gap-4 justify-content-center justify-content-md-end">
-                        <a href="https://github.com/jonash18" class="text-dim hover-white" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener"><i class="ph ph-github-logo h4"></i></a>
-                        <a href="#" class="text-dim hover-white" aria-label="Facebook" title="Facebook"><i class="ph ph-facebook-logo h4"></i></a>
-                        <a href="#" class="text-dim hover-white" aria-label="Discord" title="Discord"><i class="ph ph-discord-logo h4"></i></a>
-                        <a href="#" class="text-dim hover-white" aria-label="Instagram" title="Instagram"><i class="ph ph-instagram-logo h4"></i></a>
-                    </div>
+                <div class="footer-nav">
+                    <span class="footer-label">Explore</span>
+                    <a href="index.html#activities">Selected work <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                    <a href="about.html">About me <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                    <a href="contact.html">Get in touch <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Jonash B. Valencia</span>
+                <span class="footer-status"><i class="status-dot" aria-hidden="true"></i> Open to opportunities</span>
+                <div class="footer-socials">
+                    <a href="https://github.com/jonash18" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/jonash-valencia-696369440/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://www.facebook.com/jonash.valencia" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="https://www.instagram.com/natnatvalen/" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener"><i class="ph ph-instagram-logo"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () {
+            var EMAIL = 'valencianash1018@gmail.com';
+
+            // Copy email to clipboard
+            var copyBtn = document.getElementById('copyEmail');
+            var copyLabel = document.getElementById('copyLabel');
+            copyBtn.addEventListener('click', function () {
+                function done(ok) {
+                    copyLabel.textContent = ok ? 'Copied!' : 'Press Ctrl+C to copy';
+                    setTimeout(function () { copyLabel.textContent = 'Copy email'; }, 2000);
+                }
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(EMAIL).then(function () { done(true); }, function () { done(false); });
+                } else {
+                    done(false);
+                }
+            });
+
+            // Open the visitor's email app with the message filled in
+            var form = document.getElementById('contactForm');
+            var err = document.getElementById('formError');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var name = form.name.value.trim();
+                var email = form.email.value.trim();
+                var message = form.message.value.trim();
+                var valid = name && message && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+                err.hidden = !!valid;
+                if (!valid) return;
+
+                var subject = form.topic.value + ' - ' + name;
+                var body = message + '\n\n' + name + '\n' + email;
+                window.location.href = 'mailto:' + EMAIL +
+                    '?subject=' + encodeURIComponent(subject) +
+                    '&body=' + encodeURIComponent(body);
+            });
+        })();
+    </script>
 </body>
 </html>

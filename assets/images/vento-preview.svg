@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">VENTO Corp enterprise management dashboard preview</title>
+  <desc id="desc">An enterprise dashboard with operations, inventory, people, and security panels.</desc>
+  <defs>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#052011"/><stop offset="1" stop-color="#054342"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#052011" flood-opacity=".2"/></filter>
+  </defs>
+  <rect width="1200" height="750" fill="#edf3f3"/>
+  <rect width="250" height="750" fill="#052011"/>
+  <text x="48" y="76" fill="#d4dfe1" font-family="Arial, sans-serif" font-size="31" font-weight="700">VENTO</text>
+  <text x="48" y="104" fill="#b6c4c7" font-family="Arial, sans-serif" font-size="13" letter-spacing="2">CORPORATE SYSTEM</text>
+  <rect x="34" y="160" width="182" height="44" rx="9" fill="#054342"/><text x="58" y="188" fill="#fff" font-family="Arial, sans-serif" font-size="16" font-weight="700">Overview</text>
+  <text x="58" y="250" fill="#b6c4c7" font-family="Arial, sans-serif" font-size="16">People &amp; HR</text>
+  <text x="58" y="300" fill="#b6c4c7" font-family="Arial, sans-serif" font-size="16">Inventory</text>
+  <text x="58" y="350" fill="#b6c4c7" font-family="Arial, sans-serif" font-size="16">Operations</text>
+  <text x="58" y="400" fill="#b6c4c7" font-family="Arial, sans-serif" font-size="16">IT Security</text>
+  <text x="58" y="690" fill="#67797b" font-family="Arial, sans-serif" font-size="14">ADMIN CONSOLE</text>
+  <text x="290" y="75" fill="#052011" font-family="Arial, sans-serif" font-size="30" font-weight="700">Operations dashboard</text>
+  <text x="290" y="106" fill="#67797b" font-family="Arial, sans-serif" font-size="16">Monitor people, inventory, tasks, and security activity.</text>
+  <rect x="290" y="145" width="200" height="130" rx="16" fill="#fff" filter="url(#shadow)"/><text x="316" y="182" fill="#67797b" font-family="Arial, sans-serif" font-size="15">Employees</text><text x="316" y="235" fill="#054342" font-family="Arial, sans-serif" font-size="38" font-weight="700">248</text>
+  <rect x="512" y="145" width="200" height="130" rx="16" fill="#fff" filter="url(#shadow)"/><text x="538" y="182" fill="#67797b" font-family="Arial, sans-serif" font-size="15">Open tasks</text><text x="538" y="235" fill="#054342" font-family="Arial, sans-serif" font-size="38" font-weight="700">36</text>
+  <rect x="734" y="145" width="200" height="130" rx="16" fill="#fff" filter="url(#shadow)"/><text x="760" y="182" fill="#67797b" font-family="Arial, sans-serif" font-size="15">Stock alerts</text><text x="760" y="235" fill="#054342" font-family="Arial, sans-serif" font-size="38" font-weight="700">12</text>
+  <rect x="956" y="145" width="182" height="130" rx="16" fill="#054342" filter="url(#shadow)"/><text x="982" y="182" fill="#b6c4c7" font-family="Arial, sans-serif" font-size="15">Security status</text><text x="982" y="235" fill="#fff" font-family="Arial, sans-serif" font-size="27" font-weight="700">Protected</text>
+  <rect x="290" y="310" width="520" height="330" rx="18" fill="#fff" filter="url(#shadow)"/><text x="322" y="355" fill="#052011" font-family="Arial, sans-serif" font-size="21" font-weight="700">Workforce activity</text><path d="M330 555 L420 500 L500 525 L590 430 L675 460 L760 390" fill="none" stroke="#0f7770" stroke-width="7"/><path d="M330 555 L420 500 L500 525 L590 430 L675 460 L760 390 V585 H330 Z" fill="#d4dfe1" opacity=".65"/><line x1="330" y1="585" x2="760" y2="585" stroke="#b6c4c7" stroke-width="2"/>
+  <rect x="840" y="310" width="298" height="330" rx="18" fill="#fff" filter="url(#shadow)"/><text x="872" y="355" fill="#052011" font-family="Arial, sans-serif" font-size="21" font-weight="700">Recent alerts</text><circle cx="882" cy="407" r="7" fill="#0f7770"/><text x="904" y="413" fill="#67797b" font-family="Arial, sans-serif" font-size="15">Inventory request updated</text><circle cx="882" cy="465" r="7" fill="#0f7770"/><text x="904" y="471" fill="#67797b" font-family="Arial, sans-serif" font-size="15">Compliance report ready</text><circle cx="882" cy="523" r="7" fill="#0f7770"/><text x="904" y="529" fill="#67797b" font-family="Arial, sans-serif" font-size="15">New task assigned</text>
+</svg>

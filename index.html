@@ -4,184 +4,514 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jonash Valencia | Software Portfolio</title>
-    
+    <title>Jonash Valencia | Full-Stack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Jonash B. Valencia, a full-stack developer and BSIT student at PUP, building PHP and MySQL web systems with responsive front-ends.">
+    <meta name="theme-color" content="#052011">
+    <script src="Theme.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jonash Valencia | Full-Stack Developer Portfolio">
+    <meta property="og:description" content="PHP and MySQL web systems, responsive front-ends and selected case studies.">
+    <meta property="og:url" content="https://jonash18.github.io/">
+    <meta property="og:image" content="https://jonash18.github.io/icture.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <link rel="icon" href="VALENCIA_logo.svg?v=2" type="image/svg+xml" sizes="any">
-    <link rel="shortcut icon" href="VALENCIA_logo.svg?v=2" type="image/svg+xml">
-    
+<link rel="icon" href="assets/images/logo-transparent.png" type="image/png">
+<link rel="shortcut icon" href="assets/images/logo-transparent.png" type="image/png">
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-root-margin="-20% 0px -60% 0px" data-bs-smooth-scroll="true">
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="site-nav navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="VALENCIA_logo.png" alt="Valencia" width="50" class="me-3">
-                <span class="fw-extrabold ls-tight">J. VALENCIA</span>
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" title="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#activities">Portfolio</a></li>
-                    <li class="nav-item ms-lg-4">
-                        <a href="contact.html" class="btn-premium px-4 py-2 small">Contact Me</a>
-                    </li>
-                </ul>
+            <div class="nav-shell">
+                <a class="navbar-brand nav-brand d-flex align-items-center" href="#top">
+<img src="assets/images/logo-transparent.png" alt="Valencia logo" class="nav-brand-logo me-2">
+                    <span class="fw-extrabold ls-tight">J. VALENCIA</span>
+                </a>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+                        <i class="ph-bold ph-sun icon-to-light" aria-hidden="true"></i>
+                        <i class="ph-bold ph-moon icon-to-dark" aria-hidden="true"></i>
+                    </button>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" title="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-links ms-lg-auto me-lg-3">
+                        <li class="nav-item"><a class="nav-link is-current" href="#top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#activities">Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+                    <a href="contact.html" class="nav-cta">Hire Me <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <main class="container">
-        <section id="about" class="row align-items-center min-vh-100 py-5">
-            <div class="col-lg-5 order-2 order-lg-1 text-center text-lg-start">
-                <div class="pe-lg-5">
-                    <span class="section-tag">Systems & Infrastructure</span>
-                    <h1 class="hero-title mb-4">Crafting <span class="text-gradient">Digital Architecture</span> that scale.</h1>
-                    <p class="lead text-dim leading-relaxed mb-5">
-                        Full-Stack Developer | IT Scholar at PUP
+    <main class="container" id="top">
 
-Specialized in full-stack web engineering, custom database architectures, and intuitive UI/UX design. Passionate about merging secure backend logic with responsive front-ends to deliver highly efficient, operational systems.
+        <!-- Intro -->
+        <section class="row align-items-center py-5 hero-section">
+            <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+                <span class="status-badge mb-4">
+                    <span class="status-dot" aria-hidden="true"></span> Open to Opportunities
+                </span>
+                <h1 class="hero-name mb-3">Jonash <span class="text-gradient">Valencia</span></h1>
+                <p class="role-line mb-4">Full-Stack Developer | IT Scholar at PUP</p>
+                <p class="lead text-dim leading-relaxed mb-5 hero-copy">
+                    I build practical full-stack applications—from database design and backend workflows to responsive interfaces—with a focus on clarity, reliability, and useful user experiences.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                    <a href="#activities" class="btn-premium">View My Work <i class="ph ph-arrow-down" aria-hidden="true"></i></a>
+                    <a href="contact.html" class="btn-ghost">Get in Touch</a>
+                </div>
+
+                <div class="stat-row justify-content-center justify-content-lg-start">
+                    <div class="stat"><strong>14</strong><span>Selected projects</span></div>
+                    <div class="stat"><strong>PHP · MySQL · Python</strong><span>Core stack</span></div>
+                    <div class="stat"><strong>BSIT</strong><span>PUP Sto. Tomas</span></div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0 text-center">
+                <div class="profile-container">
+                    <img src="assets/images/Confident_Suit_Portrait_in_Modern_Office-1-removebg-preview.png?v=3" alt="Portrait of Jonash Valencia in a black suit" class="profile-pic" width="477" height="523" fetchpriority="high">
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected work -->
+        <section id="activities" class="py-5">
+            <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
+                <div>
+                    <span class="section-tag">Selected Work</span>
+                    <h2 class="display-5 fw-bold text-white mb-0 ls-tight">Case Studies</h2>
+                </div>
+                <p class="text-dim mb-0 content-max-width">Explore selected work across school systems, enterprise tools, e-commerce, prototypes, APIs, desktop software, and game development.</p>
+            </div>
+
+            <div class="work-filters" role="group" aria-label="Filter projects by category">
+                <button type="button" class="work-filter is-active" data-filter="all" aria-pressed="true">All projects</button>
+                <button type="button" class="work-filter" data-filter="featured" aria-pressed="false">Featured</button>
+                <button type="button" class="work-filter" data-filter="web" aria-pressed="false">Web</button>
+                <button type="button" class="work-filter" data-filter="backend" aria-pressed="false">Systems &amp; backend</button>
+                <button type="button" class="work-filter" data-filter="games" aria-pressed="false">Games</button>
+                <button type="button" class="work-filter" data-filter="desktop" aria-pressed="false">Desktop</button>
+                <button type="button" class="work-filter" data-filter="prototype" aria-pressed="false">Prototypes</button>
+            </div>
+
+            <div id="content">
+
+                <article class="capstone-feature" data-category="featured web backend">
+                    <div class="capstone-visual" aria-label="IskolArchive capstone project preview">
+<img src="assets/images/iskolarchive-preview.jpeg" alt="Document archive files representing the IskolArchive system" loading="lazy">
+                        <div class="capstone-visual-caption"><i class="ph ph-archive-box" aria-hidden="true"></i> ISKOLARCHIVE · DIGITAL RECORDS</div>
+                    </div>
+                    <div class="capstone-body">
+                        <div class="capstone-heading">
+                            <div>
+                                <span class="work-num">01</span>
+                                <span class="project-tag d-inline-block ms-2">Capstone Project</span>
+                            </div>
+                            <i class="ph ph-star-four capstone-star" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="work-title mt-3 mb-3">IskolArchive</h3>
+                        <p class="capstone-lead">A PHP/MySQL document archiving system that helps schools move from scattered physical records to a searchable, permission-aware digital archive.</p>
+                        <div class="capstone-problem">
+                            <span class="capstone-label">Problem it solves</span>
+                            <p>It brings student records, document requests, and archive operations into one workspace so authorized users can find, manage, and preserve files more efficiently.</p>
+                        </div>
+                        <div class="capstone-details">
+                            <div>
+                                <span class="capstone-label">My role</span>
+                                <strong>Full-stack developer</strong>
+                            </div>
+                            <div>
+                                <span class="capstone-label">Core stack</span>
+                                <strong>PHP · MySQL · Bootstrap</strong>
+                            </div>
+                        </div>
+                        <div class="capstone-features">
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Student and document management</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> CSV, XLS, and XLSX imports</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> OCR for images and scanned PDFs</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Permissions, audit logs, and backups</span>
+                        </div>
+                        <div class="capstone-actions">
+                            <a href="https://github.com/jonash18/ISKOLARCHIVE" class="btn-premium" target="_blank" rel="noopener">View repository <i class="ph ph-github-logo" aria-hidden="true"></i></a>
+                            <span class="capstone-demo-note"><i class="ph ph-clock" aria-hidden="true"></i> Live demo coming soon</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item project-vento" data-category="web backend">
+                    <div class="work-media" aria-label="VENTO Corp enterprise management system project preview">
+<img src="assets/images/vento-preview.svg" alt="VENTO Corp enterprise management dashboard preview" loading="lazy">
+                        <span class="preview-overlay preview-overlay-static" aria-hidden="true"><i class="ph ph-buildings"></i> Enterprise system</span>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-num">02</span>
+                        <span class="project-tag d-inline-block ms-2">Enterprise Management</span>
+                        <h3 class="work-title mt-3 mb-3">VENTO Corp</h3>
+                        <p class="text-dim mb-3">An enterprise management platform that connects HR, compensation, inventory, operations, compliance, and IT security through role-based dashboards.</p>
+                        <p class="project-role mb-4"><span>My role</span> Co-front-end developer</p>
+                        <div class="work-tech mb-4">PHP · MySQL · JavaScript · CSS</div>
+                        <div class="work-features mb-4">
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Role-based dashboards</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Inventory and operations workflows</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Security and compliance panels</span>
+                        </div>
+                        <a href="https://github.com/sijey-CJAA/VENTO-corp" class="work-link" target="_blank" rel="noopener">View repository <i class="ph ph-github-logo" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+
+                <article class="work-item project-flappy-bat" data-category="games">
+                    <div class="work-media game-preview-gallery" aria-label="Flappy Bat mobile game screenshots">
+                        <div class="game-preview-gallery-images">
+<img src="assets/images/flappy-bat-start.jpg" alt="Flappy Bat start screen showing the score and play button" loading="lazy">
+<img src="assets/images/flappy-bat-gameplay.jpg" alt="Flappy Bat gameplay screen showing the bat flying between obstacles" loading="lazy">
+                        </div>
+                        <span class="preview-overlay preview-overlay-static" aria-hidden="true"><i class="ph ph-device-mobile"></i> Android game</span>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-num">03</span>
+                        <span class="project-tag d-inline-block ms-2">Mobile Game</span>
+                        <h3 class="work-title mt-3 mb-3">Flappy Bat</h3>
+                        <p class="text-dim mb-3">A compact Android arcade game where players guide a bat through obstacles, build a score, and repeat the challenge through a simple tap-based loop.</p>
+                        <p class="project-role mb-4"><span>Project type</span> Android mobile game</p>
+                        <div class="work-tech mb-4">Unity · Android · IL2CPP</div>
+                        <div class="work-features mb-4">
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Tap-to-fly gameplay</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Obstacle and score loop</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Installable Android APK</span>
+                        </div>
+<a href="assets/downloads/flappy-bat.apk" class="work-link" download>Download APK <i class="ph ph-download-simple" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+
+                <article class="work-item project-cams" data-category="web backend">
+                    <div class="work-media" aria-label="Customer Assistance Management System project preview">
+<img src="assets/images/cams-preview.jpg" alt="Customer Assistance Management System preview" loading="lazy">
+                        <span class="preview-overlay preview-overlay-static" aria-hidden="true"><i class="ph ph-headset"></i> E-commerce support</span>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-num">04</span>
+                        <span class="project-tag d-inline-block ms-2">Customer Service Platform</span>
+                        <h3 class="work-title mt-3 mb-3">Customer Assistance Management System</h3>
+                        <p class="text-dim mb-3">A collaborative customer-service platform for e-commerce businesses that organizes complaints, feedback, reports, replies, and support documents in one workflow.</p>
+                        <p class="project-role mb-4"><span>My role</span> Full-stack developer</p>
+                        <div class="work-tech mb-4">PHP · MySQL · JavaScript · Bootstrap</div>
+                        <div class="work-features mb-4">
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Centralized support dashboard</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Feedback and complaint management</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> API, email, SMS, and AI integrations</span>
+                        </div>
+                        <span class="work-link work-link-muted"><i class="ph ph-users-three" aria-hidden="true"></i> Collaborated with two other groups · Demo available on request</span>
+                    </div>
+                </article>
+
+                <article class="work-item project-dbtk" data-category="web backend">
+                    <div class="work-media" aria-label="DBTK Online Store project preview">
+<img src="assets/images/dbtk-preview.png" alt="DBTK Online Store campaign preview" loading="lazy">
+                        <span class="preview-overlay preview-overlay-static" aria-hidden="true"><i class="ph ph-code"></i> Local Flask project</span>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-num">07</span>
+                        <span class="project-tag d-inline-block ms-2">Collaborative E-commerce</span>
+                        <h3 class="work-title mt-3 mb-3">DBTK Online Store</h3>
+                        <p class="text-dim mb-3">A Flask-based fashion store that connects product categories, catalog browsing, cart state, checkout, customer records, orders, and admin monitoring.</p>
+                        <p class="project-role mb-4"><span>My role</span> Co-backend developer</p>
+                        <div class="work-tech mb-4">Python · Flask · SQLite</div>
+                        <div class="work-features mb-4">
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Product and category APIs</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Cart and checkout flow</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Customer/order storage</span>
+                        </div>
+                        <span class="work-link work-link-muted"><i class="ph ph-hard-drive" aria-hidden="true"></i> Local project · Demo available on request</span>
+                    </div>
+                </article>
+
+                <article class="work-item project-student-portal" data-category="web backend">
+                    <div class="work-media" aria-label="Student Enrollment and Document Portal project preview">
+<img src="assets/images/student-portal-preview.png" alt="Student Enrollment and Document Portal preview" loading="lazy">
+                        <span class="preview-overlay preview-overlay-static" aria-hidden="true"><i class="ph ph-database"></i> Local PHP project</span>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-num">06</span>
+                        <span class="project-tag d-inline-block ms-2">Student Information System</span>
+                        <h3 class="work-title mt-3 mb-3">Student Enrollment and Document Portal</h3>
+                        <p class="text-dim mb-3">A PHP/MySQL student portal for managing accounts, program enrollment, subject schedules, class information, and online document requests.</p>
+                        <p class="project-role mb-4"><span>My role</span> Backend developer</p>
+                        <div class="work-tech mb-4">PHP · MySQL · JavaScript</div>
+                        <div class="work-features mb-4">
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Authentication and sessions</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Enrollment and subject data</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Document request workflow</span>
+                        </div>
+                        <span class="work-link work-link-muted"><i class="ph ph-hard-drive" aria-hidden="true"></i> Local project · Demo available on request</span>
+                    </div>
+                </article>
+
+                <article class="work-item project-snapeat" data-category="web prototype">
+                    <div class="work-media" aria-label="SnapEat food scanning system project preview">
+<img src="assets/images/snapeat-preview.svg" alt="SnapEat food scanning and nutrition dashboard preview" loading="lazy">
+                        <span class="preview-overlay preview-overlay-static" aria-hidden="true"><i class="ph ph-camera"></i> Prototype preview</span>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-num">05</span>
+                        <span class="project-tag d-inline-block ms-2">Food Technology Prototype</span>
+                        <h3 class="work-title mt-3 mb-3">SnapEat</h3>
+                        <p class="text-dim mb-3">A finished Flask prototype that explores food scanning, nutrition results, health scoring, food history, and healthier recommendations in one interface.</p>
+                        <p class="project-role mb-4"><span>My role</span> Co-front-end developer</p>
+                        <div class="work-tech mb-4">HTML · CSS · JavaScript · Bootstrap</div>
+                        <div class="work-features mb-4">
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Food scanner interface</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Login and signup screens</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Nutrition results and reports UI</span>
+                        </div>
+                        <span class="work-link work-link-muted"><i class="ph ph-check-circle" aria-hidden="true"></i> Finished prototype · Demo available on request</span>
+                    </div>
+                </article>
+
+                <article class="work-item project-anime-royale" data-category="games desktop">
+                    <div class="work-media" aria-label="Anime Royale Rumble project preview">
+<img src="assets/images/anime-royale-rumble-preview.jpg" alt="Anime Royale Rumble arena preview" loading="lazy">
+                        <span class="preview-overlay preview-overlay-static" aria-hidden="true"><i class="ph ph-game-controller"></i> Desktop game</span>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-num">12</span>
+                        <span class="project-tag d-inline-block ms-2">2D Fighting Game</span>
+                        <h3 class="work-title mt-3 mb-3">Anime Royale Rumble</h3>
+                        <p class="text-dim mb-3">A two-player Pygame fighting game with animated characters, combat states, health bars, timed rounds, sound effects, pause controls, and best-of-three matches.</p>
+                        <p class="project-role mb-4"><span>My role</span> Co-developer</p>
+                        <div class="work-tech mb-4">Python · Pygame · Sprite Animation</div>
+                        <div class="work-features mb-4">
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Two-player combat controls</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Animated attack and hit states</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Timed rounds and score system</span>
+                        </div>
+                        <span class="work-link work-link-muted"><i class="ph ph-desktop" aria-hidden="true"></i> Python desktop project · Demo available on request</span>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="web">
+                    <a href="https://jonash18.github.io/IPHONE/" class="work-media" data-live-preview data-preview-title="iPhone 17 Product Experience" target="_blank" rel="noopener" aria-label="Preview iPhone 17 Product Experience">
+<img src="assets/images/iphone-17.png" alt="iPhone 17 Product Experience project preview" loading="lazy">
+                        <span class="preview-overlay" aria-hidden="true"><i class="ph ph-eye"></i> Live preview <i class="ph ph-arrow-up-right"></i></span>
+                    </a>
+                    <div class="work-body">
+                        <span class="work-num">08</span>
+                        <span class="project-tag d-inline-block ms-2">Product UI</span>
+                        <h3 class="work-title mt-3 mb-3">iPhone 17 Product Experience</h3>
+                        <p class="text-dim mb-4">A responsive product microsite that presents the iPhone 17 through a dark visual system, Bootstrap navigation, a cinematic carousel, and feature-focused sections.</p>
+                        <a href="https://jonash18.github.io/IPHONE/" class="work-link" target="_blank" rel="noopener">View project <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="web">
+                    <a href="https://jonash18.github.io/TaalVolcano/" class="work-media" data-live-preview data-preview-title="Taal Volcano Explorer" target="_blank" rel="noopener" aria-label="Preview Taal Volcano Explorer">
+<img src="assets/images/Taal-Volcano4.jpg" alt="Taal Volcano Explorer project preview" loading="lazy">
+                        <span class="preview-overlay" aria-hidden="true"><i class="ph ph-eye"></i> Live preview <i class="ph ph-arrow-up-right"></i></span>
+                    </a>
+                    <div class="work-body">
+                        <span class="work-num">09</span>
+                        <span class="project-tag d-inline-block ms-2">Interactive Storytelling</span>
+                        <h3 class="work-title mt-3 mb-3">Taal Volcano Explorer</h3>
+                        <p class="text-dim mb-4">An interactive geology and travel guide combining volcano information, safety guidance, image galleries, location context, and Batangas folklore references.</p>
+                        <a href="https://jonash18.github.io/TaalVolcano/" class="work-link" target="_blank" rel="noopener">View project <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="web">
+                    <a href="https://jonash18.github.io/CivicGallery/" class="work-media" data-live-preview data-preview-title="Honda Civic Generations" target="_blank" rel="noopener" aria-label="Preview Honda Civic Generations">
+<img src="assets/images/carot2.jpg" alt="Honda Civic Generations project preview" loading="lazy">
+                        <span class="preview-overlay" aria-hidden="true"><i class="ph ph-eye"></i> Live preview <i class="ph ph-arrow-up-right"></i></span>
+                    </a>
+                    <div class="work-body">
+                        <span class="work-num">10</span>
+                        <span class="project-tag d-inline-block ms-2">Data-Driven Gallery</span>
+                        <h3 class="work-title mt-3 mb-3">Honda Civic Generations</h3>
+                        <p class="text-dim mb-4">An automotive archive that organizes 11 Honda Civic generations with JavaScript-generated model cards, Bootstrap carousels, and a visual video backdrop.</p>
+                        <a href="https://jonash18.github.io/CivicGallery/" class="work-link" target="_blank" rel="noopener">View project <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="web">
+                    <a href="https://jonash18.github.io/DragonBallZ-API-/" class="work-media" data-live-preview data-preview-title="Dragon Ball Universe Explorer" target="_blank" rel="noopener" aria-label="Preview Dragon Ball Universe Explorer">
+<img src="assets/images/dg.jpg" alt="Dragon Ball Universe Explorer project preview" loading="lazy">
+                        <span class="preview-overlay" aria-hidden="true"><i class="ph ph-eye"></i> Live preview <i class="ph ph-arrow-up-right"></i></span>
+                    </a>
+                    <div class="work-body">
+                        <span class="work-num">11</span>
+                        <span class="project-tag d-inline-block ms-2">API Explorer</span>
+                        <h3 class="work-title mt-3 mb-3">Dragon Ball Universe Explorer</h3>
+                        <p class="text-dim mb-4">A paginated character explorer that consumes the Dragon Ball API, renders structured stats cards, handles missing results, and groups characters with race-based accents.</p>
+                        <a href="https://jonash18.github.io/DragonBallZ-API-/" class="work-link" target="_blank" rel="noopener">View project <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+
+                <article class="work-item project-godzila" data-category="games desktop">
+                    <div class="work-media" aria-label="Godzila Game endless runner project preview">
+<img src="assets/images/godzila-game-preview.png" alt="Godzila Game endless runner preview" loading="lazy">
+                        <span class="preview-overlay preview-overlay-static" aria-hidden="true"><i class="ph ph-game-controller"></i> Desktop game</span>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-num">13</span>
+                        <span class="project-tag d-inline-block ms-2">Game Development</span>
+                        <h3 class="work-title mt-3 mb-3">Godzila Game</h3>
+                        <p class="text-dim mb-3">A Python/Pygame endless runner inspired by the classic browser dinosaur game, with jump physics, scrolling ground, randomized obstacles, scoring, and restart states.</p>
+                        <p class="project-role mb-4"><span>My role</span> Developer</p>
+                        <div class="work-tech mb-4">Python · Pygame</div>
+                        <div class="work-features mb-4">
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Jump and gravity mechanics</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Randomized obstacles</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Score and restart loop</span>
+                        </div>
+                        <span class="work-link work-link-muted"><i class="ph ph-desktop" aria-hidden="true"></i> Python desktop project · Demo available on request</span>
+                    </div>
+                </article>
+
+                <article class="work-item project-mlfq" data-category="desktop">
+                    <div class="work-media" aria-label="MLFQ CPU Scheduling Simulator project preview">
+<img src="assets/images/mlfq-preview.svg" alt="MLFQ CPU Scheduling Simulator preview" loading="lazy">
+                        <span class="preview-overlay preview-overlay-static" aria-hidden="true"><i class="ph ph-chart-bar"></i> Desktop simulator</span>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-num">14</span>
+                        <span class="project-tag d-inline-block ms-2">Operating Systems</span>
+                        <h3 class="work-title mt-3 mb-3">MLFQ CPU Scheduling Simulator</h3>
+                        <p class="text-dim mb-3">A Tkinter simulator for exploring Multilevel Feedback Queue scheduling, process movement between queues, execution logs, and Gantt chart visualization.</p>
+                        <p class="project-role mb-4"><span>My role</span> Developer</p>
+                        <div class="work-tech mb-4">Python · Tkinter · Data Structures</div>
+                        <div class="work-features mb-4">
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Multilevel queue execution</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> FCFS, SJF, SRTF, NPP, and PP</span>
+                            <span><i class="ph ph-check-circle" aria-hidden="true"></i> Gantt chart and process logs</span>
+                        </div>
+                        <span class="work-link work-link-muted"><i class="ph ph-desktop" aria-hidden="true"></i> Python desktop project · Demo available on request</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="preview-modal" id="projectPreviewModal" hidden>
+            <div class="preview-dialog" role="dialog" aria-modal="true" aria-labelledby="previewModalTitle">
+                <div class="preview-dialog-header">
+                    <h2 id="previewModalTitle">Live project preview</h2>
+                    <div class="preview-dialog-actions">
+                        <a id="previewExternalLink" href="#" target="_blank" rel="noopener">Open in new tab <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                        <button type="button" id="closePreview" aria-label="Close live preview" title="Close live preview"><i class="ph ph-x" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <iframe id="projectPreviewFrame" title="Live project preview" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+
+        <!-- About + skills -->
+        <section id="about" class="py-5">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <span class="section-tag">About</span>
+                    <h2 class="display-6 fw-bold text-white mb-4 ls-tight">Building complete systems, front to back.</h2>
+                    <p class="text-dim leading-relaxed mb-4">
+                        I'm a BS Information Technology student at the Polytechnic University of the Philippines (Sto. Tomas), focused on designing the MySQL database, writing the PHP back end, and shaping a responsive interface on top.
                     </p>
-                    
-                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                        <a href="#activities" class="btn-premium">View My Work <i class="ph ph-arrow-right"></i></a>
-                        <div class="skill-pill">
-                            <i class="ph ph-lightning-fill text-warning"></i>
-                            Open for Internships
+                    <a href="about.html" class="work-link mb-4">Read my full story <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                    <div class="edu-card">
+                        <i class="ph-bold ph-graduation-cap text-primary" aria-hidden="true"></i>
+                        <div>
+                            <strong class="d-block text-white">BS Information Technology</strong>
+                            <span class="text-dim small">Polytechnic University of the Philippines, Sto. Tomas &middot; 2023 to present</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" id="skills">
+                    <span class="section-tag">Skills</span>
+                    <h2 class="display-6 fw-bold text-white mb-4 ls-tight">What I work with</h2>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="skill-pill h-100"><i class="ph-bold ph-code text-primary"></i> PHP &amp; PDO</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="skill-pill h-100"><i class="ph-bold ph-database text-primary"></i> MySQL &amp; Schema Design</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="skill-pill h-100"><i class="ph-bold ph-browser text-primary"></i> JavaScript &amp; DOM</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="skill-pill h-100"><i class="ph-bold ph-browser text-primary"></i> HTML, CSS &amp; Bootstrap</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="skill-pill h-100"><i class="ph-bold ph-plugs-connected text-primary"></i> REST APIs &amp; JSON</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="skill-pill h-100"><i class="ph-bold ph-git-branch text-primary"></i> Git &amp; GitHub</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="skill-pill h-100"><i class="ph-bold ph-layout text-primary"></i> Responsive UI &amp; Accessibility</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="skill-pill h-100"><i class="ph-bold ph-chart-line-up text-primary"></i> Systems Analysis</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="skill-pill h-100"><i class="ph-bold ph-terminal-window text-primary"></i> Python &amp; Flask</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="skill-pill h-100"><i class="ph-bold ph-game-controller text-primary"></i> Pygame &amp; Unity</div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0 text-center text-lg-end">
-                <div class="profile-container">
-                    <div class="profile-glow"></div>
-                    <img src="PP.png" alt="Jonash Valencia" class="profile-pic">
-                    
-                </div>
-            </div>
         </section>
 
-        <section class="row g-4 mb-5 pb-5">
-            <div class="col-6 col-md-3">
-                <div class="skill-pill h-100 justify-content-center">
-                    <i class="ph ph-code-bold text-primary"></i> PHP Engineering
+        <!-- Contact call to action -->
+        <section class="py-5">
+            <div class="cta-band">
+                <span class="section-tag">Contact</span>
+                <h2 class="display-6 fw-bold text-white mb-3 ls-tight">Have a project or opportunity in mind?</h2>
+                <p class="text-dim mx-auto content-max-width mb-4">I'm open to new roles and collaborations. Send me a message and I'll get back to you.</p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                    <a href="mailto:valencianash1018@gmail.com" class="btn-premium">Email Me <i class="ph ph-envelope-simple" aria-hidden="true"></i></a>
+                    <a href="contact.html" class="btn-ghost">All contact options</a>
                 </div>
             </div>
-            <div class="col-6 col-md-3">
-                <div class="skill-pill h-100 justify-content-center">
-                    <i class="ph ph-database-bold text-primary"></i> MySQL Architecture
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="skill-pill h-100 justify-content-center">
-                    <i class="ph ph-layout-bold text-primary"></i> UI/UX Design
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="skill-pill h-100 justify-content-center">
-                    <i class="ph ph-git-branch-bold text-primary"></i> Systems Analysis
-                </div>
-            </div>
-        </section>
-
-        <section id="activities" class="py-5">
-            <div class="text-center mb-5 pb-lg-4">
-                <span class="section-tag">Portfolio</span>
-                <h2 class="display-5 fw-bold text-white mb-3 ls-tight">Case Studies</h2>
-                <p class="text-dim mx-auto content-max-width">Selected works representing a balance between aesthetic design and functional engineering.</p>
-            </div>
-            
-            <div class="row g-4 justify-content-center" id="content">
-                </div>
         </section>
     </main>
 
-    <footer class="py-5 mt-5 border-top border-secondary border-opacity-10">
+    <footer class="site-footer">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="text-dim small mb-0">
-                        &copy; 2026 <span class="text-white fw-bold">Jonash B. Valencia</span>. Building the future.
-                    </p>
+            <div class="footer-main">
+                <div class="footer-copy">
+                    <span class="footer-eyebrow">LET'S BUILD SOMETHING USEFUL</span>
+                    <h2>Turning ideas into thoughtful digital experiences.</h2>
+                    <p class="text-dim mb-0">Full-stack development, clean interfaces, and systems designed to do meaningful work.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
-                    <div class="d-flex gap-4 justify-content-center justify-content-md-end">
-                        <a href="https://github.com/jonash18" class="text-dim hover-white" aria-label="GitHub" title="GitHub"><i class="ph ph-github-logo h4"></i></a>
-                        <a href="https://www.linkedin.com/in/jonash-b-valencia/" class="text-dim hover-white" aria-label="LinkedIn" title="LinkedIn"><i class="ph ph-linkedin-logo h4"></i></a>
-                        <a href="https://www.instagram.com/natnatvalen/" class="text-dim hover-white" aria-label="Instagram" title="Instagram"><i class="ph ph-instagram-logo h4"></i></a>
-                    </div>
+                <div class="footer-nav">
+                    <span class="footer-label">Explore</span>
+                    <a href="index.html#activities">Selected work <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                    <a href="about.html">About me <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                    <a href="contact.html">Get in touch <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Jonash B. Valencia</span>
+                <span class="footer-status"><i class="status-dot" aria-hidden="true"></i> Open to opportunities</span>
+                <div class="footer-socials">
+                    <a href="https://github.com/jonash18" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/jonash-valencia-696369440/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://www.instagram.com/natnatvalen/" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener"><i class="ph ph-instagram-logo"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script>
-        const data = {
-            "projects": [
-                {
-                    "image": "iphone-17.png",
-                    "title": "iPhone 17 Architecture",
-                    "link": "https://jonash18.github.io/IPHONE/",
-                    "tag": "Concept Engineering",
-                    "description": "High-fidelity landing page focusing on fluid animations and responsive product display."
-                },
-                {
-                    "image": "Taal-Volcano4.jpg",
-                    "title": "Taal Geo-Showcase",
-                    "link": "https://jonash18.github.io/TaalVolcano/",
-                    "tag": "Travel Tech",
-                    "description": "A multimedia deep-dive into geological wonders using modern CSS grid layouts."
-                },
-                {
-                    "image": "carot2.jpg",
-                    "title": "Honda Automotive Archive",
-                    "link": "https://jonash18.github.io/CivicGallery/",
-                    "tag": "Dynamic Systems",
-                    "description": "Database-driven gallery showcasing vehicle evolution through high-res rendering."
-                },
-                {
-                    "image": "dg.jpg",
-                    "title": "Dragon Ball REST API",
-                    "link": "https://jonash18.github.io/DragonBallZ-API-/",
-                    "tag": "API Integration",
-                    "description": "Asynchronous data fetching and rendering using external RESTful endpoints."
-                }
-            ]
-        };
-
-        const content = document.getElementById("content");
-        
-        content.innerHTML = data.projects.map(project => `
-            <div class="col-12 col-md-6">
-                <div class="card glass-card h-100 overflow-hidden">
-                    <div class="ratio ratio-16x9 overflow-hidden">
-                        <img src="${project.image}" class="project-thumbnail object-fit-cover" alt="${project.title}">
-                    </div>
-                    <div class="card-body p-4 p-lg-5 d-flex flex-column">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <span class="project-tag">${project.tag}</span>
-                            <i class="ph ph-trend-up text-primary"></i>
-                        </div>
-                        <h3 class="h4 fw-bold text-white mb-3">${project.title}</h3>
-                        <p class="text-dim small mb-4">${project.description}</p>
-                        <div class="mt-auto">
-                            <a href="${project.link}" class="btn-premium py-2 px-4 small" target="_blank" rel="noopener">
-                                Explore Project <i class="ph ph-arrow-square-out"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `).join('');
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

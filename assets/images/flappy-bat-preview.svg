@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Flappy Bat mobile game preview</title>
+  <desc id="desc">A colorful mobile game screen with a bat flying through a night sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171344"/><stop offset="1" stop-color="#5a247c"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#100b32" flood-opacity=".3"/></filter>
+  </defs>
+  <rect width="1200" height="750" fill="#e5e8f3"/>
+  <rect x="400" y="36" width="400" height="678" rx="38" fill="url(#sky)" stroke="#fff" stroke-width="10" filter="url(#shadow)"/>
+  <circle cx="690" cy="128" r="55" fill="#ffe8a3" opacity=".95"/><circle cx="666" cy="108" r="55" fill="#171344"/>
+  <circle cx="470" cy="180" r="4" fill="#fff"/><circle cx="750" cy="226" r="5" fill="#fff"/><circle cx="525" cy="300" r="3" fill="#fff"/>
+  <text x="600" y="110" text-anchor="middle" fill="#ffd86b" font-family="Arial, sans-serif" font-size="37" font-weight="800">FLAPPY BAT</text>
+  <path d="M400 555 Q510 510 600 555 T800 555 V714 H400Z" fill="#172d4d"/><path d="M400 610 Q500 560 600 610 T800 610 V714 H400Z" fill="#10243f"/>
+  <rect x="400" y="340" width="105" height="34" rx="9" fill="#65c46a"/><rect x="400" y="374" width="52" height="180" fill="#65c46a"/><rect x="695" y="230" width="105" height="34" rx="9" fill="#65c46a"/><rect x="748" y="264" width="52" height="210" fill="#65c46a"/>
+  <path d="M566 378 Q600 346 634 378 Q665 390 642 412 Q616 428 600 411 Q578 430 553 410 Q535 392 566 378Z" fill="#f0a545" stroke="#24134f" stroke-width="7"/><circle cx="622" cy="386" r="7" fill="#fff"/><circle cx="624" cy="386" r="3" fill="#171344"/><path d="M570 381 Q530 338 543 324 Q576 333 598 366 M630 381 Q674 340 690 351 Q677 380 641 397" fill="#8a4fa9" stroke="#24134f" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="505" y="610" width="190" height="53" rx="25" fill="#ffd34f" stroke="#fff" stroke-width="4"/><text x="600" y="645" text-anchor="middle" fill="#24134f" font-family="Arial, sans-serif" font-size="22" font-weight="800">TAP TO FLY</text>
+  <text x="600" y="203" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="21" font-weight="700">SCORE 024</text>
+</svg>
